@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 5, "column": 0}, "map": {"version":3,"sources":["/turbopack/[project]/middleware.ts"],"sourcesContent":["import {NextRequest} from \"next/server\";\r\n\r\nexport async function middleware(request:NextRequest){\r\n    return await updateSession(request);\r\n}"],"names":[],"mappings":";;;AAEO,eAAe,WAAW,OAAmB;IAChD,OAAO,MAAM,cAAc;AAC/B"}},
+    {"offset": {"line": 11, "column": 0}, "map": {"version":3,"sources":[],"names":[],"mappings":"A"}}]
+}

@@ -1,0 +1,22 @@
+{
+  "pages": {
+    "/page": [
+      "static/chunks/[root of the server]__eade23._.css",
+      "static/chunks/08b5e_next_ee1867._.js",
+      "static/chunks/[project]_my-nextui-app_5c439f._.js",
+      "static/chunks/app_layout_tsx_0c949d._.js",
+      "static/chunks/app_error_tsx_29c4bb._.js",
+      "static/chunks/app_error_tsx_a63a2e._.js",
+      "static/chunks/08b5e_next_dist_compiled_react_a1d82d._.js",
+      "static/chunks/08b5e_next_dist_compiled_react-dom_cjs_react-dom_development_c9a189.js",
+      "static/chunks/08b5e_next_dist_compiled_react-dom_87a050._.js",
+      "static/chunks/08b5e_next_dist_compiled_e13b54._.js",
+      "static/chunks/08b5e_next_dist_client_8bb71d._.js",
+      "static/chunks/08b5e_next_dist_38ecb8._.js",
+      "static/chunks/08b5e_@swc_helpers_cjs_00636a._.js",
+      "static/chunks/[turbopack]_dev_client_hmr-client_ts_23f2be._.js",
+      "static/chunks/08b5e_next_dist_esm_build_templates_app-page_f31acf.js",
+      "static/chunks/08b5e_next_dist_esm_build_templates_app-page_23ae4a.js"
+    ]
+  }
+}
