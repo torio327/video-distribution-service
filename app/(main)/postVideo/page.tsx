@@ -2,6 +2,7 @@ import Upload from "@/app/(main)/postVideo/upload";
 import {createClient} from "@/utils/supabase/server";
 import {redirect} from "next/navigation";
 import Link from "next/link";
+import TestUpload from "@/app/(main)/postVideo/test-upload";
 
 const Page =async () => {
     const supabase =await createClient()
@@ -13,8 +14,6 @@ const Page =async () => {
     const userId=data.user?.id
  return(
      <>
-         <Link href={"/watch"}>watch</Link>
-         <Link href={`/watch/${data.user?.id}`}>watch userVideo</Link>
      <Upload userId={userId}/>
      </>
  )

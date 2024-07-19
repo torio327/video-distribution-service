@@ -19,28 +19,15 @@ interface userVideo{
 }
 
 const PrivateVideo = ({userVideo}:Props) => {
-    // const [deletePath, setDeletePath] = useState<string[]>([])
-
-
-    // const handleCheck=(path:string)=>{
-    //     setDeletePath([...deletePath,path])
-    //     console.log(deletePath)
-    // }
     return (
         <>
             <div className={"grid grid-cols-3 gap-4"}>
                 {userVideo.map((video) => {
                     return (
-                        <div key={video.id} className={"bg-rose-500"}>
-                            <Card  video={video}/>
-                            {/*<input type={"checkbox"} onChange={()=>handleCheck(video.videoSrc)}/>*/}
-                            {/*<button onClick={onDelete(video.videoSrc)} type={"button"}>Delete</button>*/}
-                        </div>
+                            <Card key={video.id}  video={video}/>
                     )
                 })}
-
             </div>
-            <button>Delete</button>
         </>
 
     );
