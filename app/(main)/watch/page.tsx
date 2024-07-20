@@ -15,15 +15,16 @@ const Page = async () => {
         redirect('/login')
     }
 
-    const videos=await getVideo();
-    if(videos){
-        videos.sort((a,b)=>{
-            const dateA=new Date(a.updated_at);
-            const dateB=new Date(b.updated_at);
-            return dateB.getTime()-dateA.getTime()
-        })
-    }
+    // const videos=await getVideo();
+    // if(videos){
+    //     videos.sort((a,b)=>{
+    //         const dateA=new Date(a.updated_at);
+    //         const dateB=new Date(b.updated_at);
+    //         return dateB.getTime()-dateA.getTime()
+    //     })
+    // }
     const publicVideo=await getPublicVideo();
+    publicVideo.reverse()
     console.log(publicVideo)
     return (
         <div className={"w-full"}>

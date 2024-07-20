@@ -20,6 +20,15 @@ export const pack=pgTable('pack',{
     description:text('description').notNull()
 })
 
+export const packVideo=pgTable("packVideo",{
+    id:serial("id").primaryKey(),
+    videoTitle:text("video_title").notNull(),
+    description:text("description").notNull(),
+    videoSrc:text('video_src').notNull(),
+    packId:integer("packId").references(()=>pack.id,{onDelete:"cascade"}).notNull(),
+    user_id:text("user_id").references(()=>users.id,{onDelete:"cascade"}).notNull()
+})
+
 export const videos=pgTable('videos',{
     id:serial('id').primaryKey(),
     videoTitle:text('video_title').notNull(),

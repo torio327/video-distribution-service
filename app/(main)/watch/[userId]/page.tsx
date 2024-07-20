@@ -20,12 +20,9 @@ const Page = async ({params}:Props) => {
     userVideo.reverse();
     // console.log(userVideo)
     return (
-        <div>
-            <Link href={"/private"}>private</Link>
-            <Link href={"/postVideo"}>postVideo</Link>
-            <p>{params.userId}</p>
+        <>
             <PrivateVideo userVideo={userVideo}/>
-        </div>
+        </>
     );
 };
 
