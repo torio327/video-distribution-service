@@ -13,7 +13,7 @@ const PublicVideo =  ({videos}:Props) => {
     return (
         <>
             <div className={"grid grid-cols-3 mx-auto gap-4 bg-slate-400"}>
-                {videos.reverse().map((video) => {
+                {videos.map((video) => {
                     return (
                         <Card key={video.id} video={video}/>
                     )

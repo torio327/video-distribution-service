@@ -17,7 +17,7 @@ interface video{
     videoSrc: string  ,
     // packId: number | null,
 }
-
+//ブロブ用に残しておく
 export const uploadVideo=async (formData:FormData)=>{
     try{
         console.log('jikko')
@@ -66,6 +66,7 @@ export const uploadVideo=async (formData:FormData)=>{
         //window.alert('Error uploading video!')
     }
 }
+
 export const postVideo=async (video:video)=>{
     // const gvideos=await getVideo();
 
