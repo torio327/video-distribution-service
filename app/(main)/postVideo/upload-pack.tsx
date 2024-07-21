@@ -20,7 +20,7 @@ const UploadPack = () => {
     }
 
     const handleChange=(setter:React.Dispatch<React.SetStateAction<any>>,field:string)=>(newValue:string|File)=>{
-        setter(prevState=>({...prevState,[field]:newValue}))
+        setter(prevState =>({...prevState,[field]:newValue}))
     }
 
     console.log("hello")
