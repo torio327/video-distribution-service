@@ -24,7 +24,7 @@ const UploadPage = ({userId}:Props) => {
         <div className={cn("bg-green-500 h-screen")}>
             <h1>PostVideo</h1>
             <UploadVideo userId={userId}/>
-            <UploadPack/>
+            <UploadPack userId={userId}/>
         </div>
     );
 };

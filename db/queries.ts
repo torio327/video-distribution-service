@@ -2,7 +2,7 @@
 import db from "@/db/db";
 import {cache} from "react";
 import {eq} from "drizzle-orm";
-import {videos} from "@/db/schema";
+import {pack, pack_video, videos} from "@/db/schema";
 
 
 // export const getUser=async (email:string)=>{
@@ -30,5 +30,26 @@ export const getUserVideo=cache(async (userId:string)=>{
 
 export const getPublicVideo=cache(async()=>{
     const data=await db.query.videos.findMany()
+    return data
+})
+
+export const getPack=cache(async ()=>{
+    const data=await db.query.pack.findMany({
+        with:{
+            pack_video:true
+        }
+    })
+    if(!data){
+        return []
+    }
+    return data
+})
+
+export const getPackId=cache(async (userId:string)=>{
+    const data=await db.query.pack.findMany(
+        {
+            where:eq(pack.userId,userId)
+        }
+    )
     return data
 })

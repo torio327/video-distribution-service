@@ -15,6 +15,13 @@
       "when": 1719721141263,
       "tag": "0001_material_venom",
       "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "7",
+      "when": 1721529073668,
+      "tag": "0002_early_nightcrawler",
+      "breakpoints": true
     }
   ]
 }
