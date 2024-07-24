@@ -115,12 +115,9 @@ const comment="testettestettstestetwwewkflfjlaa"
     alert("パックを作れませんでした")
 }
 
-
     }
 
-    const testCreatePack=async ()=>{
 
-    }
     return (
         <>
             <Button variant={"default"} onClick={createPack}>Create Pack</Button>
