@@ -17,7 +17,7 @@ const PackContent = ({onVideoTitleChange,onVideoDescriptionChange,onVideoFileCha
         onVideoDescriptionChange(event.target.value)
     }
     const handleVideoFileChange=(event:React.ChangeEvent<HTMLInputElement>)=>{
-        const file:File=event.target.files?.[0]
+        const file=event.target.files?.[0]
         if(file){
             onVideoFileChange(file)
         }

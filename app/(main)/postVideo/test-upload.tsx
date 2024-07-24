@@ -1,11 +1,9 @@
-import {useActionState} from 'react';
-
 import {uploadVideo} from "@/actions/userActtions";
 
 
 
 const TestUpload = () => {
-    //test
+    //実験
     // const [message,uploadAction]=useActionState(uploadVideo,null)
     return (
         <div>
