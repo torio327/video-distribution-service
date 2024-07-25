@@ -1,4 +1,3 @@
-
 import React from 'react';
 import {videos} from "@/db/schema";
 import Card from "@/app/(main)/watch/[userId]/card";

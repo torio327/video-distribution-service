@@ -14,7 +14,7 @@ const PackHeader = ({onPackTitleChange,onDescriptionChange,onThumbnailChange}:Pr
         onDescriptionChange(event.target.value)
     }
     const handleThumbnailChange=(event:React.ChangeEvent<HTMLInputElement>)=>{
-        const file=event.target.files?.[0]
+        const file:any=event.target.files?.[0]
         if(file){
             onThumbnailChange(file)
         }
